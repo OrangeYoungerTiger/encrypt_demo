@@ -1,2 +1,5 @@
 # encrypt_demo
-常见加密或哈希算法python脚本
+一些常用编码,哈希,加密的python脚本, 可以在native逆向中进行参考
+编码: base64 
+哈希: md5,sha1,sha256
+对称加密: aes-128
