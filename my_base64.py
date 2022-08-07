@@ -3,9 +3,11 @@
 # @Author : Amigo
 class b64:
 
-    def __init__(self):
+    def __init__(self, table=None):
         # base64 编码表
-        self.table = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+        self.table = table
+        if not table:
+            self.table = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 
     def __str__(self):
         return 'Base64 Encoder / Decoder'
